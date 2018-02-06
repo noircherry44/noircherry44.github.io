@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: mqlus-1p-regular;
+  src:url(../font/mplus-1p-regular.ttf) format("truetype");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', 'mplus-1p-regular', sans-serif;
+  font-weight: 300;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+body a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1{
+  font-size: 90px;
+  font-weight: 400;
+}
+
+h2{
+  font-size: 50px;
+  font-weight: 200;
+  padding-left:10%;
+}
+
+li{
+  font-size:30px;
+  font-weight:300;
+}
+
+.layout_c{
+  text-align:center;
+  vertical-align:middle;
+}
+
+.layout_l{
+  text-align:left;
+  vertical-align:middle;
+}
+
+.layout_r{
+  text-align:right;
+  vertical-align:middle;
+}
+
+.float_l{
+  float:left;
+}
+
+.float_r{
+  float:right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.m-container {
+  opacity: 0.7;
+  padding: 5% 0 5% 0%;
+}
+
+.back_p{
+  background-color: #d60039;
+  color:#fff;
+}
+
+.home {
+  padding-top:15%;
+}
+
+.m-container h1{
+  text-align: center;
+}
+
+.m-container p{
+  text-align: center;
+  margin-bottom:8%;
+}
+
+/*リストの横並び*/
+.m-container .m-list {
+  padding-left:15%;
+  overflow: hidden;
+  margin-right: -10px;
+  margin-top: 10px;
+}
+.m-container .m-list li {
+  list-style:none;
+  float: left;
+  margin-right: 10px;
+}
+.m-container .m-list img {
+  height:80px;
+  vertical-align:middle;
+}
+
+/*アイコン*/
+.p-icon {
+  padding-left:15%;
+  margin-right:20px;
+  margin-top: 10px;
+  width:100px;
+  height:100px;
+  display:inline-block;
+  float:left;
+}
+.p-icon img{
+  width:100%;
+  height:100%;
+}
+
+/*説明のスタイル*/
+.description{
+  font-size:14px;
+  font-weight:100;
+  margin-bottom:20px;
+}
+
+/*データ定義リストの横並び*/
+.p-list dt {
+  padding-left:15%;
+  clear: left;
+  float: left;
+  width: 20%;
+  font-weight: bold;
+}
+.p-list dd { margin: 0 0 0 20%; }
+.p-list dd:before { content: '：　'; }
+
+/*フッター*/
+footer{
+  opacity: 0.7;
+  padding:5% 0 5% 0;
+}
+.mod-btn {
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  width: 300px;
+  height:60px;
+  display:block;
+  vertical-align:middle;
+  text-align: center;
+  border: 2px #fff solid;
+  border-radius: 5px;
+}
+.mod-btn:hover{
+  opacity: 0.7;
+  border: 2px #0090ff solid;
+}
+.mod-btn a{
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+  font-size:50px;
+  color: #fff;
+}
+.mod-btn a:hover {
+  color: #0090ff;
+}
+.mod-btn a:hover .border {
+  opacity: 1;
+}
+
+footer div.description{
+  margin-top:20px;
+  //padding-left:15%;
+}
+/*フェードイン*/
+body {
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
